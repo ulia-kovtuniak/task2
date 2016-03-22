@@ -37,14 +37,22 @@
             <fotter> <p> Published:<time datetime="2016-03-08"> March 8, 2016</time></p></fotter>
             <form id="contact" action="" method="post">
                 <fieldset>
+                    <legend><strong>Information</strong></legend>
                     <label for="name" required/>Name:</label>
-                    <input type="text" name="name" placeholder="First name"/> <br>
+                    <input type="text" name="name" placeholder="First name" autofocus /> <br>
+                        <br>
                     <label for="email" required/>E-mail:</label>
                     <input type="email" name="email" placeholder="User email"> <br>
+                        <br>
                     <label for="msg">Message:</label>
-                    <input type="textarea" name="msg" placeholder="Text"><br>
+                    <textarea name="msg" placeholder="Text"></textarea>
+                    <br>
+                    <br>
+                    <label for="ok">I agree</label>
+                    <input type="radio" name="ok" value="I agree">
+                    <br>
+                    <br>
                     <button input type="submit">Send a message</button>
                 </fieldset>
-
         </form>
     </body>
